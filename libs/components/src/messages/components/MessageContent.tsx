@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { Code } from 'src/Code';
 import { Collapse } from 'src/Collapse';
@@ -58,6 +59,7 @@ const MessageContent = memo(
         >
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
             className="markdown-body"
             components={{
               a({ children, ...props }) {

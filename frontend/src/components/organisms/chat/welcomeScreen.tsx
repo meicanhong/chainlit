@@ -1,5 +1,6 @@
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useRecoilValue } from 'recoil';
+import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 
 import { Box, Link } from '@mui/material';
@@ -36,6 +37,7 @@ const WelcomeScreen = () => {
           <ReactMarkdown
             className="markdown-body"
             remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
             components={{
               a: ({ children, ...props }) => (
                 <Link {...props} target="_blank">
