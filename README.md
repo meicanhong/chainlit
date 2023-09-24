@@ -1,3 +1,6 @@
+# Change Log
+**FP-Chainlit-UI base on chainlit 0.7.0 to support parse html element and render to UI, you can use it in https://pypi.org/project/fp-chainlit-ui/**
+
 # Welcome to Chainlit 👋
 
 **Build Python LLM apps in minutes ⚡️**
