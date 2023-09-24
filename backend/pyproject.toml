@@ -1,12 +1,15 @@
 [tool.poetry]
-name = "chainlit"
-version = "0.7.0"
+name = "fp-chainlit"
+version = "0.7.1"
 keywords = ['LLM', 'Agents', 'gen ai', 'chat ui', 'chatbot ui', 'langchain']
 description = "A faster way to build chatbot UIs."
-authors = ["Chainlit"]
+authors = ["danny <danny@footprint.network>"]
 license = "Apache-2.0 license"
-repository = "https://github.com/Chainlit/chainlit"
+repository = "https://github.com/meicanhong/chainlit"
 readme = "README.md"
+packages = [
+    { include = "chainlit"}
+]
 exclude = [
     "**/frontend/**/*",
 ]
